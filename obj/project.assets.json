@@ -710,11 +710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Dojo_Assignments\\C#\\KevinSoloProject\\KevinSoloProject.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\KevinSoloProject\\KevinSoloProject.csproj",
       "projectName": "KevinSoloProject",
-      "projectPath": "C:\\Users\\User\\Desktop\\Dojo_Assignments\\C#\\KevinSoloProject\\KevinSoloProject.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\KevinSoloProject\\KevinSoloProject.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Dojo_Assignments\\C#\\KevinSoloProject\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\KevinSoloProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
