@@ -14,4 +14,6 @@ public class MyContext : DbContext
     // the "Monsters" table name will come from the DbSet property name
 	///// ndryshoni DbSet me emrin e modelit tuaj dhe jasht <> vendoseni emrin e modelit ne shumes////
     public DbSet<User> Users { get; set; } 
+    public DbSet<Image> Images { get; set; } 
+    public DbSet<Favourite> Favourites { get; set; } 
 }

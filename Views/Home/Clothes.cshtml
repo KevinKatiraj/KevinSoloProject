@@ -1,0 +1,42 @@
+@model Image
+<section 
+    style="background-image: url('https://wallpapercave.com/wp/wp5352442.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+<div class="nav-bar">
+    <div class="width-restrictor">
+        <div class="nav-left">
+            <a class="logo" href="/"><img
+                    src="https://images-platform.99static.com//hzpQKgcKN6sZZOC4xfmFAkV-avY=/215x0:984x769/fit-in/590x590/99designs-contests-attachments/51/51051/attachment_51051281"
+                    class="logo"></a>
+            <a class="navbar-link undefined" href="/Clothes"
+                style="color: rgb(51, 51, 51); border-bottom: none; padding-top: 0px;">Clothes</a>
+            <a class="navbar-link undefined" href="/Postclothes"
+                style="color: rgb(255, 77, 0); border-bottom: none; padding-top: 0px;">Post your closet</a>
+        </div>
+        <div class="nav-right">     
+            <a class="navbar-icon wishlist-icon" href="/Favourite"><img
+                    src="https://cdn.prod.joinwardrobe.com/packs/media/images/52e752043ee2a8338016.svg"
+                    style="height: 27px;"></a>
+                    <a href="/Logout" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+</div>
+
+<h3 class="text-center">Existing Clothes</h3>
+<div class=" row">
+    @foreach (var item in @ViewBag.iLoguari.PostedImage)
+    {
+        <div class="col-sm-4"
+        
+        style="box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 8px 1px; margin-bottom: 30px; cursor: pointer;">
+            <a href="Edit/@item.ImageId"><img class="clothes-img rounded mx-auto d-block"
+                src="~/Images/@item.Myimage"/></a>
+                    <a class="navbar-icon wishlist-icon" onclick="Toggle" href="/Favourite/@item.ImageId"><img class="fav-clothes far"
+                    src="https://cdn.prod.joinwardrobe.com/packs/media/images/52e752043ee2a8338016.svg"
+                    style="height: 27px;"></a>
+        </div>
+    }
+</div>
+
+
+</section>
+

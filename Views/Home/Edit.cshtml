@@ -1,0 +1,59 @@
+@model Image
+<section class="bcimazh"
+    style="background-image: url('https://wallpapercave.com/wp/wp5352442.jpg'); height:800px ; background-position: center;  background-size: cover;">
+<div class="nav-bar">
+        <div class="width-restrictor">
+                <div class="nav-left">
+                        <a class="logo" href="/"><img
+                                        src="https://images-platform.99static.com//hzpQKgcKN6sZZOC4xfmFAkV-avY=/215x0:984x769/fit-in/590x590/99designs-contests-attachments/51/51051/attachment_51051281"
+                                        class="logo"></a>
+                        <a class="navbar-link undefined" href="/Clothes"
+                                style="color: rgb(51, 51, 51); border-bottom: none; padding-top: 0px;">Clothes</a>
+                        <a class="navbar-link undefined" href="/Postclothes"
+                                style="color: rgb(255, 77, 0); border-bottom: none; padding-top: 0px;">Post your
+                                closet</a>
+                </div>
+                <div class="nav-right">
+                        <a class="navbar-icon wishlist-icon" href="/Favourite"><img
+                                        src="https://cdn.prod.joinwardrobe.com/packs/media/images/52e752043ee2a8338016.svg"
+                                        style="height: 27px;"></a>
+                        <a href="/Logout" class="btn btn-danger">Logout</a>
+                </div>
+        </div>
+</div>
+
+<form action="/Edit/@Model.ImageId" method="post">
+        <div class="text-center mt-4 col-sm-8">
+                @* <label for="file-upload" class="custom-file-upload">
+                        <i class="fa fa-cloud-upload"></i> UPLOAD PHOTO
+                        </label>
+                        <input id="file-upload" asp-for="Clothes" type="file" onchange="getImagePreview(event)" />
+                        <input type="submit" name="submit" class="upload-btn">
+                        <div id="preview" class="mt-5"></div> *@
+                <img class="clothes-img rounded mx-auto d-block" src="~/Images/@Model.Myimage" /></a>
+        </div>
+
+        <div class="row">
+               
+                <div class="clothes-type col-sm-4 ">
+                        <legend>Choose your outfit tag's:</legend>
+                        Pranvere<input type="radio" asp-for="Stina" value="Pranvere" class="m-1 cursor-pointer" />
+                        Vere<input type="radio" asp-for="Stina" value="Vere" class="m-1 cursor-pointer" />
+                        Vjeshte<input type="radio" asp-for="Stina" value="Vjeshte" class="m-1 cursor-pointer" />
+                        Dimer<input type="radio" asp-for="Stina" value="Dimer" class="m-1 cursor-pointer" /><br>
+                        Bluze me menge te shkurtra<input type="radio" asp-for="Category"value="Bluze me menge te shkurtra" class="m-1 cursor-pointer" />
+                        Bluze me menge te gjata<input type="radio" asp-for="Category" value="Bluze me menge te gjata"class="m-1 cursor-pointer" />
+                        Pantallona te gjata<input type="radio" asp-for="Category" value="Pantallona te gjata"class="m-1 cursor-pointer" />
+                        Pantallona te shkurtra<input type="radio" asp-for="Category" value="Pantallona te shkurtra"class="m-1 cursor-pointer" /><br>
+                        Bluze<input type="radio" asp-for="Type" value="Bluze" class="m-1 cursor-pointer" />
+                        Kepuce<input type="radio" asp-for="Type" value="Kepuce" class="m-1 cursor-pointer" />
+                        Xhakete<input type="radio" asp-for="Type" value="Xhakete" class="m-1 cursor-pointer" />
+                        Pantallona<input type="radio" asp-for="Type" value="Pantallona" class="m-1 cursor-pointer" />
+                        <button type="submit">Submit</button>
+                </div>
+        </div>
+</form>
+                <a class="btn btn-danger" href="/delete/@Model.ImageId">Delete clothes</a>
+
+</section>
+

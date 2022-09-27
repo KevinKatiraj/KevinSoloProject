@@ -12,6 +12,8 @@ html {
   margin: 0px;
 }
 
+
+
 .gradient-custom-3 {
   /* fallback for old browsers */
   background: #84fab0;
@@ -32,6 +34,7 @@ html {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
   }
+
   .image{
     height: 100%;
   }
@@ -90,23 +93,23 @@ a {
 }
 
 .nav-bar .width-restrictor .nav-right .navbar-icon {
-  margin-left: 45px;
+  margin-left: 5px;
   position: relative;
   cursor: pointer;
-} 
+  margin-right: 15px;
+}   
 
 .moti{
-  position: relative;
-  left: 1160px;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  right: 0;
   height: 47vh;
   background: #eaeaea;
   border-radius: 70px;
-  width: 100%;
-  max-width: 350px;
+  /* width: 100%; */
+  /* max-width: 350px; */
   padding: 2em;
   margin-top: 10em;
+  margin-right: 10px;
 }
 
 .search{
@@ -115,7 +118,7 @@ a {
   justify-content: center;
 } 
 
-button {
+.btn-moti {
   cursor: pointer;
   border-radius: 50%;
   border: none;
@@ -169,4 +172,82 @@ h1.temp {
   position: absolute;
   top: 0;
   left: 20px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 70px;
+}
+
+.clothes-img{
+  height: 300px;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.clothes-type{
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* height: 90%; */
+  background: #eaeaea;
+  border-radius: 70px;
+  /* width: 100%; */
+  /* max-width: 350px; */
+  padding: 2em;
+  margin-right: 10px;
+  margin-top: 110px;
+}
+
+.upload-btn{
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+
+.itemcard {
+  height: 400px;
+}
+
+button:hover{
+  transition: 0.05s;
+  background-color: white;
+  transform: rotateZ(-8deg);
+  box-shadow: 0 0 30px -10px black;
+}
+
+.reveal{
+  opacity: 0;
+
+}
+.Show{
+  opacity: 1;
+
+}
+ 
+.fav-clothes{
+  background-color: white;
+  transition: .4s;
+}
+
+.fav-clothes:hover
+{
+  background-color: #f50057;
 }

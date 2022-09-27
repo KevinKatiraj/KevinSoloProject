@@ -23,6 +23,7 @@ let weather = {
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png"
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°C";
+        document.querySelector("#moti").value = temp ;
         document.querySelector(".humidity").innerText = "Humidity" + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Spped " + speed + "km/h";
         document.querySelector(".weather").classList.remove("loading");
@@ -45,3 +46,25 @@ document.querySelector(".search-bar").addEventListener("keyup" , function (event
 } );
 
 weather.fetchWeather("Tirana");
+
+
+function getImagePreview(event)
+{
+  var image=URL.createObjectURL(event.target.files[0]);
+  var imagediv= document.getElementById('preview');
+  var newimg=document.createElement('img');
+  imagediv.innerHTML='';
+  newimg.src=image;
+  newimg.width="300";
+  imagediv.appendChild(newimg);
+}
+
+function reveal()
+{
+    var reveal = document.querySelector('.reveal')
+    reveal.classList.add('Show');
+
+}
+
+
+

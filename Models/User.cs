@@ -27,10 +27,14 @@ public class User
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
+    public List<Image>? PostedImage { get; set; } = new List<Image>();
+
     [NotMapped]
     [Compare("Password")]
     [DataType(DataType.Password)]
     public string ConfirmPassword { get; set; }
+ 
+    
 }
 
 
